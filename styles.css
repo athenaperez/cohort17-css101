@@ -1,0 +1,39 @@
+/***************************
+STEP 1 - class selector, id selector
+***************************/
+
+
+p {
+	border-bottom: solid red 1px;
+}
+
+.kermit {
+	border: solid green 2px;
+	border-radius: 10%;
+}
+
+#main-div-1 {
+	padding: 5%;
+}
+
+
+/***************************
+STEP 2 - select child, descedatn, and sibling elements
+***************************/
+
+/*#main-div-2 > .kermit - would indicated direct child*/
+
+/*kermit is decenedent in this example:*/
+#main-div-2 .kermit {
+	border: dotted purple 1px;
+}
+
+/*selects DIRECT CHILD ONLY*/
+#main-div-2 > p {
+	background-color: orange;
+}
+
+/*would select all p's at same level:*/
+/*#main-div-2 ~ p {
+	background-color: orange;
+}*/
